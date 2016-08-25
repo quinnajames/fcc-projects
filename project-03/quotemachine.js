@@ -9,6 +9,7 @@
 
 
    $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=" + quotenum + "&callback=", function(a) {
+     console.log(a[arrayint].content);
      a[arrayint].content = a[arrayint].content.replace("<p>", "").replace("</p>", "");
    $("#quoteArea").html("<h2>" + a[arrayint].content + "</h2><p>— " + a[arrayint].title + "</p>");
       var url = "https://twitter.com/intent/tweet?text=" + a[arrayint].content.replace("<p>", "").replace("</p>", "") + " —" + a[arrayint].title + "&hashtags=designquotes&via=volucrisscr";
