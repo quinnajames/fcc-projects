@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  background-color: #222;
+}
+
+#calculator {
+  width: 517px;
+  height: calc(5 * 151px);
+  background-color: #aaa;
+}
+
+.button {
+  background-color: #fff;
+  width: 120px;
+  height: 85px;
+  font-size: 40px;
+  font-family: Roboto, sans-serif;
+  margin: 3px 3px 3px 3px;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
+
+.button:active {
+  background-color: #555;
+  color: #fff;
+}
+
+#result {
+  background-color: rgb(80, 80, 240);
+  color: white;
+  width: 480px;
+  max-width: 463px;
+  height: 100px;
+  padding: 25px;
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#resultText {
+  font-family: 'Liberation Mono', monospace;
+  font-size: 60px;
+}
+
+#bottomText {
+  font-family: 'Roboto', monospace;
+  font-size: 30px;
+}
+
+#calculator {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  border: 2px solid black;
+}
+
+#bottom-box {
+  background-color: rgb(240, 80, 80);
+  color: white;
+  width: 480px;
+  height: 100px;
+  padding: 25px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#footerDiv {
+    background-color: #eee;
+    min-height: 50px;
+    width: 617px;
+  margin: auto;
+  border: 1px solid #aaa;
+}
+
+#footer {
+  text-align: center;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+#footer a {
+  color: rgb(100,100,200);
+}
