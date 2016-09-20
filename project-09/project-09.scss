@@ -1,0 +1,44 @@
+// FreeCodeCamp Project #9: Tic Tac Toe Game
+// Solution by Quinn James
+// Version 1: September 19, 2016
+
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Roboto);
+
+h1 {font-size: 60px;
+  font-family: 'Slabo 27px', serif;}
+
+body {
+  background-color: #222222;
+  font-family: 'Roboto', sans-serif;
+}
+
+#footer {
+  text-align: center;
+  color: black;
+}
+#footer a {
+  color: rgb(100,100,200);
+}
+
+#game-container {
+  background-color: #aaa;
+  // Viewport height: a slightly hacky way to do responsive height
+  min-height: 39vh;
+}
+$square_padding: 10px;
+.game-square {
+  width: calc(33.33% - #{$square_padding});
+  height: calc(13vh - #{$square_padding});
+  background-color: #eee;
+  padding: $square_padding;
+  display: inline-block;
+  border: 1px solid #000;
+
+}
+.letter {
+  font-weight: bold;
+  // vertical align, sort of (4)
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+}

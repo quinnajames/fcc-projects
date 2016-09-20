@@ -1,0 +1,32 @@
+//- FreeCodeCamp Project #9: Tic Tac Toe Game
+//- Solution by Quinn James
+//- Version 1: September 19, 2016
+
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Type', content='text/html')
+  body
+    div(class="container-fluid")
+      div(class="col-md-4 col-md-offset-4 well")
+        div(class="text-center")
+          h1
+            | Tx3 Game
+          p
+            button(type="button" id="x") Start as X
+            button(type="button" id="o") Start as O
+            button(type="button" id="reset") Reset
+          p(id="wincheck")
+          div(class="col-md-8 col-md-offset-2 well" id="game-container")
+            each value in [0, 1, 2]
+              div(id="row_#{value}")
+                each value2 in [0, 1, 2]
+                  - var divvalue = (value * 3 + value2)
+                  div(class="game-square" id="square_#{divvalue}")
+                    - var spanvalue = (value * 3 + value2)
+                    span(class="letter" id="span_#{spanvalue}")
+                      | &nbsp;
+        p(id="footer")
+          | Written and coded by
+          a(href="https://www.freecodecamp.com/volucrisscr") Quinn James
+          | .
